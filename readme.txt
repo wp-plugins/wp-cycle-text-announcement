@@ -5,8 +5,8 @@ Author URI: http://www.gopiplus.com/work/2012/04/07/wp-cycle-text-announcement-w
 Plugin URI: http://www.gopiplus.com/work/2012/04/07/wp-cycle-text-announcement-wordpress-plugin/
 Tags:  Cycle, text, announcement, wordpress, plugin
 Requires at least: 3.0
-Tested up to: 3.4.1
-Stable tag: 4.0
+Tested up to: 3.4.2
+Stable tag: 5.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	
@@ -91,6 +91,10 @@ Slight change in the short code, Please find the new short code for your slider.
 
 New demo link, www.gopiplus.com
 
+= 5.0 =
+
+Tested up to 3.4.2
+
 == Changelog ==
 
 = 1.0 = 
@@ -109,3 +113,7 @@ Slight change in the short code, Please find the new short code for your slider.
 = 4.0 =
 
 New demo link, www.gopiplus.com
+
+= 5.0 =
+
+Tested up to 3.4.2
