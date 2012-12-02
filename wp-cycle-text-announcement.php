@@ -5,7 +5,7 @@ Plugin Name: Wp cycle text announcement
 Plugin URI: http://www.gopiplus.com/work/2012/04/07/wp-cycle-text-announcement-wordpress-plugin/
 Description: Wp cycle text plugin is to show the text news with cycle jQuery. Display one news at a time and cycle the remaining in the mentioned location.
 Author: Gopi.R
-Version: 5.0
+Version: 5.1
 Author URI: http://www.gopiplus.com/work/2012/04/07/wp-cycle-text-announcement-wordpress-plugin/
 Donate link: http://www.gopiplus.com/work/2012/04/07/wp-cycle-text-announcement-wordpress-plugin/
 Tags: Cycle, text, announcement, wordpress, plugin
@@ -56,8 +56,8 @@ function wpcytxt($setting)
 	?>
 	</div>
     <script type="text/javascript">
-    $(function() {
-	$('#WP-CYCLE-<?php echo strtoupper($setting); ?>').cycle({
+    jQuery(function() {
+	jQuery('#WP-CYCLE-<?php echo strtoupper($setting); ?>').cycle({
 		fx: '<?php echo @$wpcytxt_sdirection; ?>',
 		speed: <?php echo @$wpcytxt_sspeed; ?>,
 		timeout: <?php echo @$wpcytxt_stimeout; ?>
@@ -181,8 +181,8 @@ function wpcytxt_shortcode( $atts )
 
 	$wpcycle = $wpcycle . '</div>';
 	$wpcycle = $wpcycle . '<script type="text/javascript">';
-    $wpcycle = $wpcycle . '$(function() {';
-	$wpcycle = $wpcycle . "$('#WP-CYCLE-".strtoupper($setting)."').cycle({fx: '".$wpcytxt_sdirection."',speed: " . $wpcytxt_sspeed . ",timeout: " . $wpcytxt_stimeout . "";
+    $wpcycle = $wpcycle . 'jQuery(function() {';
+	$wpcycle = $wpcycle . "jQuery('#WP-CYCLE-".strtoupper($setting)."').cycle({fx: '".$wpcytxt_sdirection."',speed: " . $wpcytxt_sspeed . ",timeout: " . $wpcytxt_stimeout . "";
 	$wpcycle = $wpcycle . '});';
 	$wpcycle = $wpcycle . '});';
 	$wpcycle = $wpcycle . '</script>';
@@ -216,8 +216,8 @@ function wpcytxt_add_javascript_files()
 {
 	if (!is_admin())
 	{
-		wp_enqueue_script( 'jquery-1.3.2.min', get_option('siteurl').'/wp-content/plugins/wp-cycle-text-announcement/js/jquery-1.3.2.min.js');
-		wp_enqueue_script( 'jquery.cycle.all.min', get_option('siteurl').'/wp-content/plugins/wp-cycle-text-announcement/js/jquery.cycle.all.min.js');
+		wp_enqueue_script('jquery');
+		wp_enqueue_script( 'jquery.cycle.all.latest', get_option('siteurl').'/wp-content/plugins/wp-cycle-text-announcement/js/jquery.cycle.all.latest.js');
 		wp_enqueue_style( 'wp-cycle-text', get_option('siteurl').'/wp-content/plugins/wp-cycle-text-announcement/wp-cycle-text-style.css');
 	}	
 }
