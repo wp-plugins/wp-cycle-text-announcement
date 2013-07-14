@@ -5,8 +5,8 @@ Author URI: http://www.gopiplus.com/work/2012/04/07/wp-cycle-text-announcement-w
 Plugin URI: http://www.gopiplus.com/work/2012/04/07/wp-cycle-text-announcement-wordpress-plugin/
 Tags:  cycle, text, announcement, wordpress, plugin
 Requires at least: 3.0
-Tested up to: 3.5
-Stable tag: 5.1
+Tested up to: 3.6
+Stable tag: 6.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	
@@ -101,6 +101,12 @@ Tested up to WordPress 3.5
 Avoid registering the alternate jQuery.
 From this version we are using existing wordpress jQuery.
 
+= 6.0 =
+
+Tested up to 3.6
+Added few security features.
+New admin layout.
+
 == Changelog ==
 
 = 1.0 = 
@@ -129,3 +135,9 @@ Tested up to 3.4.2
 Tested up to WordPress 3.5
 Avoid registering the alternate jQuery.
 From this version we are using existing wordpress jQuery.
+
+= 6.0 =
+
+Tested up to 3.6
+Added few security features.
+New admin layout.

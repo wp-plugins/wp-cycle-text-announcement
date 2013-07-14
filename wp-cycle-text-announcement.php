@@ -5,7 +5,7 @@ Plugin Name: Wp cycle text announcement
 Plugin URI: http://www.gopiplus.com/work/2012/04/07/wp-cycle-text-announcement-wordpress-plugin/
 Description: Wp cycle text plugin is to show the text news with cycle jQuery. Display one news at a time and cycle the remaining in the mentioned location.
 Author: Gopi.R
-Version: 5.1
+Version: 6.0
 Author URI: http://www.gopiplus.com/work/2012/04/07/wp-cycle-text-announcement-wordpress-plugin/
 Donate link: http://www.gopiplus.com/work/2012/04/07/wp-cycle-text-announcement-wordpress-plugin/
 Tags: Cycle, text, announcement, wordpress, plugin
@@ -16,6 +16,11 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 global $wpdb, $wp_version;
 define("WP_WPCYTXT_SETTINGS", $wpdb->prefix . "cycletext_settings");
 define("WP_WPCYTXT_CONTENT", $wpdb->prefix . "cycletext_content");
+
+define("Wp_wpcytxt_UNIQUE_NAME", "wp-cycle-text-announcement");
+define("Wp_wpcytxt_TITLE", "Wp cycle text announcement");
+define('Wp_wpcytxt_FAV', 'http://www.gopiplus.com/work/2012/04/07/wp-cycle-text-announcement-wordpress-plugin/');
+define('Wp_wpcytxt_LINK', 'Check official website for more information <a target="_blank" href="'.Wp_wpcytxt_FAV.'">click here</a>');
 
 function wpcytxt($setting) 
 {
@@ -135,7 +140,31 @@ function wpcytxt_widget($args)
 function wpcytxt_admin_options() 
 {
 	global $wpdb;
-	include_once("content-management.php");
+	//include_once("content-management.php");
+	
+	global $wpdb;
+	$current_page = isset($_GET['ac']) ? $_GET['ac'] : '';
+	switch($current_page)
+	{
+		case 'add':
+			include('pages/content-add.php');
+			break;
+		case 'edit':
+			include('pages/content-edit.php');
+			break;
+		case 'addcycle':
+			include('pages/cycle-setting-add.php');
+			break;
+		case 'editcycle':
+			include('pages/cycle-setting-edit.php');
+			break;
+		case 'showcycle':
+			include('pages/cycle-setting-show.php');
+			break;
+		default:
+			include('pages/content-show.php');
+			break;
+	}
 }
 
 function wpcytxt_shortcode( $atts ) 
@@ -207,8 +236,7 @@ function wpcytxt_add_to_menu()
 {
 	if (is_admin()) 
 	{
-		add_options_page('Wp cycle text', 'Wp cycle text', 'manage_options', __FILE__, 'wpcytxt_admin_options' );
-		add_options_page('Wp cycle text', '', 'manage_options', "wp-cycle-text-announcement/cycle-setting.php",'' );
+		add_options_page('Wp cycle text', 'Wp cycle text', 'manage_options', 'wp-cycle-text-announcement', 'wpcytxt_admin_options' );
 	}
 }
 
@@ -224,7 +252,7 @@ function wpcytxt_add_javascript_files()
 
 function wpcytxt_deactivation() 
 {
-
+	// No action required.
 }
 
 add_shortcode( 'cycle-text', 'wpcytxt_shortcode' );

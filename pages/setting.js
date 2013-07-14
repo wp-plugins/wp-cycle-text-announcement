@@ -1,6 +1,6 @@
 function wpcytxt_setting_redirect()
 {
-	window.location = "options-general.php?page=wp-cycle-text-announcement/cycle-setting.php";
+	window.location = "options-general.php?page=wp-cycle-text-announcement&ac=showcycle";
 }
 
 function wpcytxt_help()
@@ -46,14 +46,14 @@ function wpcytxt_content_delete(id)
 {
 	if(confirm("Do you want to delete this record?"))
 	{
-		document.wpcytxt_content_display.action="options-general.php?page=wp-cycle-text-announcement/wp-cycle-text-announcement.php&AC=DEL&DID="+id;
-		document.wpcytxt_content_display.submit();
+		document.frm_wpcytxt_display.action="options-general.php?page=wp-cycle-text-announcement&ac=del&did="+id;
+		document.frm_wpcytxt_display.submit();
 	}
 }	
 
 function wpcytxt_content_redirect()
 {
-	window.location = "options-general.php?page=wp-cycle-text-announcement/wp-cycle-text-announcement.php";
+	window.location = "options-general.php?page=wp-cycle-text-announcement";
 }
 
 function wpcytxt_content_submit()
