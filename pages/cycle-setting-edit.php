@@ -13,7 +13,7 @@ $result = $wpdb->get_var($sSql);
 
 if ($result != '1')
 {
-	?><div class="error fade"><p><strong>Oops, selected details doesn't exist.</strong></p></div><?php
+	?><div class="error fade"><p><strong><?php _e('Oops, selected details doesnt exist', 'wp-cycle-text'); ?></strong></p></div><?php
 }
 else
 {
@@ -56,13 +56,13 @@ if (isset($_POST['wpcytxt_form_submit']) && $_POST['wpcytxt_form_submit'] == 'ye
 	$form['wpcytxt_stimeout'] = isset($_POST['wpcytxt_stimeout']) ? $_POST['wpcytxt_stimeout'] : '';
 	if ($form['wpcytxt_stimeout'] == '')
 	{
-		$wpcytxt_errors[] = __('Please enter the slider timeout, only number.', Wp_wpcytxt_UNIQUE_NAME);
+		$wpcytxt_errors[] = __('Please enter the slider timeout, only number.', 'wp-cycle-text');
 		$wpcytxt_error_found = TRUE;
 	}
 	$form['wpcytxt_sspeed'] = isset($_POST['wpcytxt_sspeed']) ? $_POST['wpcytxt_sspeed'] : '';
 	if ($form['wpcytxt_sspeed'] == '')
 	{
-		$wpcytxt_errors[] = __('Please enter the slider speed, only number.', Wp_wpcytxt_UNIQUE_NAME);
+		$wpcytxt_errors[] = __('Please enter the slider speed, only number.', 'wp-cycle-text');
 		$wpcytxt_error_found = TRUE;
 	}
 
@@ -82,35 +82,36 @@ if (isset($_POST['wpcytxt_form_submit']) && $_POST['wpcytxt_form_submit'] == 'ye
 			);
 		$wpdb->query($sSql);
 		
-		$wpcytxt_success = 'Details was successfully updated.';
+		$wpcytxt_success = __('Details was successfully updated.', 'wp-cycle-text');
 	}
 }
 
 if ($wpcytxt_error_found == TRUE && isset($wpcytxt_errors[0]) == TRUE)
 {
-?>
-  <div class="error fade">
-    <p><strong><?php echo $wpcytxt_errors[0]; ?></strong></p>
-  </div>
-  <?php
+	?>
+	<div class="error fade">
+		<p><strong><?php echo $wpcytxt_errors[0]; ?></strong></p>
+	</div>
+	<?php
 }
 if ($wpcytxt_error_found == FALSE && strlen($wpcytxt_success) > 0)
 {
-?>
-  <div class="updated fade">
-    <p><strong><?php echo $wpcytxt_success; ?> <a href="<?php echo get_option('siteurl'); ?>/wp-admin/options-general.php?page=wp-cycle-text-announcement&ac=showcycle">Click here</a> to view the details</strong></p>
-  </div>
-  <?php
+	?>
+	<div class="updated fade">
+		<p><strong><?php echo $wpcytxt_success; ?> 
+		<a href="<?php echo WP_wpcytxt_ADMIN_URL; ?>&ac=showcycle"><?php _e('Click here to view the details', 'wp-cycle-text'); ?></a></strong></p>
+	</div>
+	<?php
 }
 ?>
-<script language="JavaScript" src="<?php echo get_option('siteurl'); ?>/wp-content/plugins/wp-cycle-text-announcement/pages/setting.js"></script>
+<script language="JavaScript" src="<?php echo WP_wpcytxt_PLUGIN_URL; ?>/pages/setting.js"></script>
 <div class="form-wrap">
 	<div id="icon-edit" class="icon32 icon32-posts-post"><br></div>
-	<h2><?php echo Wp_wpcytxt_TITLE; ?></h2>
+	<h2><?php _e('Wp cycle text announcement', 'wp-cycle-text'); ?></h2>
 	<form name="wpcytxt_setting_form" method="post" action="#" onsubmit="return wpcytxt_setting_submit()"  >
-      <h3>Update details</h3>
+      <h3><?php _e('Update Details', 'wp-cycle-text'); ?></h3>
 	  
-	  <label for="tag-title">Setting name</label>
+	  <label for="tag-title"><?php _e('Setting name', 'wp-cycle-text'); ?></label>
 		<select name="wpcytxt_sname" id="wpcytxt_sname" disabled="disabled">
 			<option value="">Select</option>
             <?php
@@ -128,42 +129,51 @@ if ($wpcytxt_error_found == FALSE && strlen($wpcytxt_success) > 0)
 			}
 			?>
           </select>
-		<p>Select a setting name.</p>
+			<?php
+			if($form['wpcytxt_sname'] == "SETTING1")
+			{
+				_e('Setting 1 is default for widget.', 'wp-cycle-text');
+			}
+			?>	
+		<p><?php _e('Select a setting name.', 'wp-cycle-text'); ?></p>
 		
-		<label for="tag-title">Link</label>
+		<label for="tag-title"><?php _e('Link', 'wp-cycle-text'); ?></label>
 		<select name="wpcytxt_slink" id="wpcytxt_slink">
 			<option value='_blank' <?php if($form['wpcytxt_slink'] == '_blank' ) { echo "selected='selected'" ; } ?>>Open in new window</option>
 			<option value='_self' <?php if($form['wpcytxt_slink'] == '_self' ) { echo "selected='selected'" ; } ?>>Open in same window</option>
 		</select>
-		<p>Selct your link setting.</p>
+		<p><?php _e('Select your link setting.', 'wp-cycle-text'); ?></p>
 		
-		<label for="tag-title">Speed</label>
+		<label for="tag-title"><?php _e('Speed', 'wp-cycle-text'); ?></label>
 		<input name="wpcytxt_sspeed" type="text" id="wpcytxt_sspeed" value="<?php echo $form['wpcytxt_sspeed']; ?>" maxlength="5" />
-		<p>Enter your speed. Ex: 700</p>
+		<p><?php _e('Enter your speed.', 'wp-cycle-text'); ?> Ex: 700</p>
 		
-		<label for="tag-title">Timeout</label>
+		<label for="tag-title"><?php _e('Timeout', 'wp-cycle-text'); ?></label>
 		<input name="wpcytxt_stimeout" type="text" id="wpcytxt_stimeout" value="<?php echo $form['wpcytxt_stimeout']; ?>" maxlength="5" />
-		<p>Enter your timeout. Ex: 5000</p>
+		<p><?php _e('Enter your timeout.', 'wp-cycle-text'); ?> Ex: 5000</p>
 		
-		<label for="tag-title">Direction</label>
+		<label for="tag-title"><?php _e('Direction', 'wp-cycle-text'); ?></label>
 		<select name="wpcytxt_sdirection" id="wpcytxt_sdirection">
             <option value='scrollLeft' <?php if($form['wpcytxt_sdirection']== 'scrollLeft') { echo 'selected' ; } ?>>scrollLeft</option>
             <option value='scrollRight' <?php if($form['wpcytxt_sdirection'] == 'scrollRight') { echo 'selected' ; } ?>>scrollRight</option>
             <option value='scrollUp' <?php if($form['wpcytxt_sdirection'] == 'scrollUp') { echo 'selected' ; } ?>>scrollUp</option>
             <option value='scrollDown' <?php if($form['wpcytxt_sdirection'] == 'scrollDown') { echo 'selected' ; } ?>>scrollDown</option>
           </select>
-		<p>Selct cycle direction.</p>
+		<p><?php _e('Select cycle direction.', 'wp-cycle-text'); ?></p>
 		
 	  
       <input name="wpcytxt_sid" id="wpcytxt_sid" type="hidden" value="<?php echo $form['wpcytxt_sid']; ?>">
       <input type="hidden" name="wpcytxt_form_submit" value="yes"/>
       <p class="submit">
-        <input name="publish" lang="publish" class="button add-new-h2" value="Update Details" type="submit" />&nbsp;
-        <input name="publish" lang="publish" class="button add-new-h2" onclick="wpcytxt_setting_redirect()" value="Cancel" type="button" />&nbsp;
-        <input name="Help" lang="publish" class="button add-new-h2" onclick="wpcytxt_help()" value="Help" type="button" />
+        <input name="publish" lang="publish" class="button add-new-h2" value="<?php _e('Update Details', 'wp-cycle-text'); ?>" type="submit" />&nbsp;
+        <input name="publish" lang="publish" class="button add-new-h2" onclick="wpcytxt_setting_redirect()" value="<?php _e('Cancel', 'wp-cycle-text'); ?>" type="button" />&nbsp;
+        <input name="Help" lang="publish" class="button add-new-h2" onclick="wpcytxt_help()" value="<?php _e('Help', 'wp-cycle-text'); ?>" type="button" />
       </p>
 	  <?php wp_nonce_field('wpcytxt_form_edit'); ?>
     </form>
 </div>
-<p class="description"><?php echo Wp_wpcytxt_LINK; ?></p>
+<p class="description">
+	<?php _e('Check official website for more information', 'wp-cycle-text'); ?>
+	<a target="_blank" href="<?php echo Wp_wpcytxt_FAV; ?>"><?php _e('click here', 'wp-cycle-text'); ?></a>
+</p>
 </div>

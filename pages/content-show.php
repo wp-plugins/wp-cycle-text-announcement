@@ -19,7 +19,7 @@ if (isset($_POST['frm_wpcytxt_display']) && $_POST['frm_wpcytxt_display'] == 'ye
 	
 	if ($result != '1')
 	{
-		?><div class="error fade"><p><strong>Oops, selected details doesn't exist (1).</strong></p></div><?php
+		?><div class="error fade"><p><strong><?php _e('Oops, selected details doesnt exist', 'wp-cycle-text'); ?></strong></p></div><?php
 	}
 	else
 	{
@@ -37,7 +37,7 @@ if (isset($_POST['frm_wpcytxt_display']) && $_POST['frm_wpcytxt_display'] == 'ye
 			
 			//	Set success message
 			$wpcytxt_success_msg = TRUE;
-			$wpcytxt_success = __('Selected record was successfully deleted ('.$did.').', wpcytxt_UNIQUE_NAME);
+			$wpcytxt_success = __('Selected record was successfully deleted ('.$did.').', 'wp-cycle-text');
 		}
 	}
 	
@@ -49,35 +49,36 @@ if (isset($_POST['frm_wpcytxt_display']) && $_POST['frm_wpcytxt_display'] == 'ye
 ?>
 <div class="wrap">
   <div id="icon-edit" class="icon32 icon32-posts-post"></div>
-    <h2><?php echo Wp_wpcytxt_TITLE; ?></h2>
-    <h3>Announcement management<a class="add-new-h2" href="<?php echo get_option('siteurl'); ?>/wp-admin/options-general.php?page=wp-cycle-text-announcement&amp;ac=add">Add New</a></h3>
+    <h2><?php _e('Wp cycle text announcement', 'wp-cycle-text'); ?></h2>
+    <h3><?php _e('Announcement management', 'wp-cycle-text'); ?>
+	<a class="add-new-h2" href="<?php echo WP_wpcytxt_ADMIN_URL; ?>&amp;ac=add"><?php _e('Add New', 'wp-cycle-text'); ?></a></h3>
 	<div class="tool-box">
 	<?php
 		$sSql = "SELECT * FROM `".WP_WPCYTXT_CONTENT."` order by wpcytxt_cid desc";
 		$myData = array();
 		$myData = $wpdb->get_results($sSql, ARRAY_A);
 		?>
-		<script language="JavaScript" src="<?php echo get_option('siteurl'); ?>/wp-content/plugins/wp-cycle-text-announcement/pages/setting.js"></script>
+		<script language="JavaScript" src="<?php echo WP_wpcytxt_PLUGIN_URL; ?>/pages/setting.js"></script>
 		<form name="frm_wpcytxt_display" method="post">
       <table width="100%" class="widefat" id="straymanage">
         <thead>
           <tr>
             <th class="check-column" scope="col" style="width:15px;"><input type="checkbox" name="wpcytxt_group_item[]" /></th>
-			<th scope="col">No</th>
-			<th scope="col">Announcement</th>
-            <th scope="col">Setting</th>
-			<th scope="col">Start date</th>
-			<th scope="col">End date</th>
+			<th scope="col"><?php _e('No', 'wp-cycle-text'); ?></th>
+			<th scope="col"><?php _e('Announcement', 'wp-cycle-text'); ?></th>
+            <th scope="col"><?php _e('Setting', 'wp-cycle-text'); ?></th>
+			<th scope="col"><?php _e('Start date', 'wp-cycle-text'); ?></th>
+			<th scope="col"><?php _e('End date', 'wp-cycle-text'); ?></th>
           </tr>
         </thead>
 		<tfoot>
           <tr>
             <th class="check-column" scope="col" style="height:15px;"><input type="checkbox" name="wpcytxt_group_item[]" /></th>
-			<th scope="col">No</th>
-			<th scope="col">Announcement</th>
-            <th scope="col">Setting</th>
-			<th scope="col">Start date</th>
-			<th scope="col">End date</th>
+			<th scope="col"><?php _e('No', 'wp-cycle-text'); ?></th>
+			<th scope="col"><?php _e('Announcement', 'wp-cycle-text'); ?></th>
+            <th scope="col"><?php _e('Setting', 'wp-cycle-text'); ?></th>
+			<th scope="col"><?php _e('Start date', 'wp-cycle-text'); ?></th>
+			<th scope="col"><?php _e('End date', 'wp-cycle-text'); ?></th>
           </tr>
         </tfoot>
 		<tbody>
@@ -93,8 +94,8 @@ if (isset($_POST['frm_wpcytxt_display']) && $_POST['frm_wpcytxt_display'] == 'ye
 						<td><?php echo stripslashes($data['wpcytxt_cid']); ?></td>
 						<td><?php echo stripslashes($data['wpcytxt_ctitle']); ?>
 						<div class="row-actions">
-							<span class="edit"><a title="Edit" href="<?php echo get_option('siteurl'); ?>/wp-admin/options-general.php?page=wp-cycle-text-announcement&amp;ac=edit&amp;did=<?php echo $data['wpcytxt_cid']; ?>">Edit</a> | </span>
-							<span class="trash"><a onClick="javascript:wpcytxt_content_delete('<?php echo $data['wpcytxt_cid']; ?>')" href="javascript:void(0);">Delete</a></span> 
+						<span class="edit"><a title="Edit" href="<?php echo WP_wpcytxt_ADMIN_URL; ?>&amp;ac=edit&amp;did=<?php echo $data['wpcytxt_cid']; ?>"><?php _e('Edit', 'wp-cycle-text'); ?></a> | </span>
+						<span class="trash"><a onClick="javascript:wpcytxt_content_delete('<?php echo $data['wpcytxt_cid']; ?>')" href="javascript:void(0);"><?php _e('Delete', 'wp-cycle-text'); ?></a></span> 
 						</div>
 						</td>
 						<td><?php echo stripslashes($data['wpcytxt_csetting']); ?></td>
@@ -107,7 +108,7 @@ if (isset($_POST['frm_wpcytxt_display']) && $_POST['frm_wpcytxt_display'] == 'ye
 			}
 			else
 			{
-				?><tr><td colspan="6" align="center">No records available.</td></tr><?php 
+				?><tr><td colspan="6" align="center"><?php _e('No records available.', 'wp-cycle-text'); ?></td></tr><?php 
 			}
 			?>
 		</tbody>
@@ -117,20 +118,23 @@ if (isset($_POST['frm_wpcytxt_display']) && $_POST['frm_wpcytxt_display'] == 'ye
       </form>	
 	  <div class="tablenav">
 	  <h2>
-	  <!--<a class="button add-new-h2" href="<?php echo get_option('siteurl'); ?>/wp-admin/options-general.php?page=wp-cycle-text-announcement&amp;ac=add">Add New</a>-->
-	  <a class="button add-new-h2" href="<?php echo get_option('siteurl'); ?>/wp-admin/options-general.php?page=wp-cycle-text-announcement&amp;ac=show">Announcement Management</a>
-	  <a class="button add-new-h2" href="<?php echo get_option('siteurl'); ?>/wp-admin/options-general.php?page=wp-cycle-text-announcement&amp;ac=showcycle">Setting Management</a>
-	  <a class="button add-new-h2" href="<?php echo get_option('siteurl'); ?>/wp-admin/options-general.php?page=wp-cycle-text-announcement&amp;ac=showcycle">View Shortcode</a>
-	  <a class="button add-new-h2" target="_blank" href="<?php echo Wp_wpcytxt_FAV; ?>">Help</a>
+	  <!--<a class="button add-new-h2" href="<?php echo WP_wpcytxt_ADMIN_URL; ?>&amp;ac=add">Add New</a>-->
+	  <a class="button add-new-h2" href="<?php echo WP_wpcytxt_ADMIN_URL; ?>&amp;ac=show"><?php _e('Announcement Management', 'wp-cycle-text'); ?></a>
+	  <a class="button add-new-h2" href="<?php echo WP_wpcytxt_ADMIN_URL; ?>&amp;ac=showcycle"><?php _e('Setting Management', 'wp-cycle-text'); ?></a>
+	  <a class="button add-new-h2" href="<?php echo WP_wpcytxt_ADMIN_URL; ?>&amp;ac=showcycle"><?php _e('View Shortcode', 'wp-cycle-text'); ?></a>
+	  <a class="button add-new-h2" target="_blank" href="<?php echo Wp_wpcytxt_FAV; ?>"><?php _e('Help', 'wp-cycle-text'); ?></a>
 	  </h2>
 	  </div>
 	  <div style="height:5px"></div>
-	<h3>Plugin configuration option</h3>
+	<h3><?php _e('Plugin configuration option', 'wp-cycle-text'); ?></h3>
 	<ol>
-		<li>Add the plugin in the posts or pages using short code.</li>
-		<li>Add directly in to the theme using PHP code.</li>
-		<li>Drag and drop the widget to your sidebar.</li>
+		<li><?php _e('Add the plugin in the posts or pages using short code.', 'wp-cycle-text'); ?></li>
+		<li><?php _e('Add directly in to the theme using PHP code.', 'wp-cycle-text'); ?></li>
+		<li><?php _e('Drag and drop the widget to your sidebar.', 'wp-cycle-text'); ?></li>
 	</ol>
-	<p class="description"><?php echo Wp_wpcytxt_LINK; ?></p>
+	<p class="description">
+		<?php _e('Check official website for more information', 'wp-cycle-text'); ?>
+		<a target="_blank" href="<?php echo Wp_wpcytxt_FAV; ?>"><?php _e('click here', 'wp-cycle-text'); ?></a>
+	</p>
 	</div>
 </div>
