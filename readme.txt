@@ -50,6 +50,12 @@ After activated the plugin, go to plugin menu on your wordpress dashboard to man
 
 Dashboard ==> Settings ==> Wp cycle text
 
+
+= Translators =
+
+* English (en_EN) - [Gopi Ramasamy](http://www.gopiplus.com/)
+* Serbian (sr_RS) & Spanish (es_ES) - [Ognjen Djuraskovic](http://firstsiteguide.com/)
+
 == Installation ==	
 
 [Installation instruction and configuration](http://www.gopiplus.com/work/2012/04/07/wp-cycle-text-announcement-wordpress-plugin/)
