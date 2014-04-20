@@ -5,8 +5,8 @@ Author URI: http://www.gopiplus.com/work/2012/04/07/wp-cycle-text-announcement-w
 Plugin URI: http://www.gopiplus.com/work/2012/04/07/wp-cycle-text-announcement-wordpress-plugin/
 Tags:  cycle, text, announcement, wordpress, plugin
 Requires at least: 3.4
-Tested up to: 3.8
-Stable tag: 6.1
+Tested up to: 3.9
+Stable tag: 6.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	
@@ -121,6 +121,11 @@ New admin layout.
 2. Now this plugin supports localization (or internationalization). i.e. option to translate into other languages. 
 Plugin *.po file (wp-cycle-text.po) available in the languages folder.
 
+= 6.2 =
+
+1. Tested up to 3.9
+2. Restricted direct page access.
+
 == Changelog ==
 
 = 1.0 = 
@@ -161,3 +166,8 @@ New admin layout.
 1. Tested up to 3.8
 2. Now this plugin supports localization (or internationalization). i.e. option to translate into other languages. 
 Plugin *.po file (wp-cycle-text.po) available in the languages folder.
+
+= 6.2 =
+
+1. Tested up to 3.9
+2. Restricted direct page access.

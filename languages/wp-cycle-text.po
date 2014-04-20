@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Wp cycle text announcement 6.1\n"
-"POT-Creation-Date: 2014-02-02 10:40+0800\n"
-"PO-Revision-Date: 2014-02-02 10:40+0800\n"
+"POT-Creation-Date: 2014-04-19 11:08+0800\n"
+"PO-Revision-Date: 2014-04-19 11:08+0800\n"
 "Last-Translator: \n"
 "Language-Team: www.gopiplus.com <www.gopiplus.com>\n"
 "MIME-Version: 1.0\n"
@@ -13,264 +13,264 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../wp-cycle-text-announcement.php:88
+#: ../wp-cycle-text-announcement.php:86 ../wp-cycle-text-announcement.php:239
 msgid "No records found"
 msgstr ""
 
-#: ../wp-cycle-text-announcement.php:144 ../pages/content-add.php:99
-#: ../pages/content-edit.php:122 ../pages/content-show.php:52
-#: ../pages/cycle-setting-edit.php:110 ../pages/cycle-setting-show.php:52
+#: ../wp-cycle-text-announcement.php:142 ../pages/content-add.php:100
+#: ../pages/content-edit.php:123 ../pages/content-show.php:53
+#: ../pages/cycle-setting-edit.php:111 ../pages/cycle-setting-show.php:53
 msgid "Wp cycle text announcement"
 msgstr ""
 
-#: ../wp-cycle-text-announcement.php:146 ../pages/content-add.php:143
-#: ../pages/content-edit.php:173 ../pages/content-show.php:136
-#: ../pages/cycle-setting-edit.php:176 ../pages/cycle-setting-show.php:141
+#: ../wp-cycle-text-announcement.php:144 ../pages/content-add.php:144
+#: ../pages/content-edit.php:174 ../pages/content-show.php:137
+#: ../pages/cycle-setting-edit.php:177 ../pages/cycle-setting-show.php:142
 msgid "Check official website for more information"
 msgstr ""
 
-#: ../wp-cycle-text-announcement.php:147 ../pages/content-add.php:144
-#: ../pages/content-edit.php:174 ../pages/content-show.php:137
-#: ../pages/cycle-setting-edit.php:177 ../pages/cycle-setting-show.php:142
+#: ../wp-cycle-text-announcement.php:145 ../pages/content-add.php:145
+#: ../pages/content-edit.php:175 ../pages/content-show.php:138
+#: ../pages/cycle-setting-edit.php:178 ../pages/cycle-setting-show.php:143
 msgid "click here"
 msgstr ""
 
-#: ../wp-cycle-text-announcement.php:246 ../wp-cycle-text-announcement.php:251
-#: ../wp-cycle-text-announcement.php:259
+#: ../wp-cycle-text-announcement.php:248 ../wp-cycle-text-announcement.php:253
+#: ../wp-cycle-text-announcement.php:261
 msgid "Wp cycle text"
 msgstr ""
 
-#: ../pages/content-add.php:26 ../pages/content-edit.php:54
+#: ../pages/content-add.php:27 ../pages/content-edit.php:55
 msgid "Please enter the announcement."
 msgstr ""
 
-#: ../pages/content-add.php:32 ../pages/content-edit.php:60
+#: ../pages/content-add.php:33 ../pages/content-edit.php:61
 msgid "Please enter the link, if no link just enter #."
 msgstr ""
 
-#: ../pages/content-add.php:38 ../pages/content-edit.php:66
+#: ../pages/content-add.php:39 ../pages/content-edit.php:67
 msgid "Please enter the start date, YYYY-MM-DD."
 msgstr ""
 
-#: ../pages/content-add.php:44 ../pages/content-edit.php:72
+#: ../pages/content-add.php:45 ../pages/content-edit.php:73
 msgid "Please select the setting."
 msgstr ""
 
-#: ../pages/content-add.php:50 ../pages/content-edit.php:78
+#: ../pages/content-add.php:51 ../pages/content-edit.php:79
 msgid "Please enter the end date, YYYY-MM-DD."
 msgstr ""
 
-#: ../pages/content-add.php:65
+#: ../pages/content-add.php:66
 msgid "New details was successfully added."
 msgstr ""
 
-#: ../pages/content-add.php:91 ../pages/content-edit.php:114
-#: ../pages/cycle-setting-edit.php:102
+#: ../pages/content-add.php:92 ../pages/content-edit.php:115
+#: ../pages/cycle-setting-edit.php:103
 msgid "Click here to view the details"
 msgstr ""
 
-#: ../pages/content-add.php:101
+#: ../pages/content-add.php:102
 msgid "Add announcement details"
 msgstr ""
 
-#: ../pages/content-add.php:103 ../pages/content-edit.php:126
-#: ../pages/content-show.php:68 ../pages/content-show.php:78
+#: ../pages/content-add.php:104 ../pages/content-edit.php:127
+#: ../pages/content-show.php:69 ../pages/content-show.php:79
 msgid "Announcement"
 msgstr ""
 
-#: ../pages/content-add.php:105 ../pages/content-edit.php:128
+#: ../pages/content-add.php:106 ../pages/content-edit.php:129
 msgid "Enter your announcement text."
 msgstr ""
 
-#: ../pages/content-add.php:107 ../pages/content-edit.php:130
-#: ../pages/cycle-setting-edit.php:140 ../pages/cycle-setting-show.php:69
-#: ../pages/cycle-setting-show.php:81
+#: ../pages/content-add.php:108 ../pages/content-edit.php:131
+#: ../pages/cycle-setting-edit.php:141 ../pages/cycle-setting-show.php:70
+#: ../pages/cycle-setting-show.php:82
 msgid "Link"
 msgstr ""
 
-#: ../pages/content-add.php:109 ../pages/content-edit.php:132
+#: ../pages/content-add.php:110 ../pages/content-edit.php:133
 msgid "Enter your announcement link."
 msgstr ""
 
-#: ../pages/content-add.php:111 ../pages/content-edit.php:134
+#: ../pages/content-add.php:112 ../pages/content-edit.php:135
 msgid "Setting name:"
 msgstr ""
 
-#: ../pages/content-add.php:121 ../pages/content-edit.php:152
+#: ../pages/content-add.php:122 ../pages/content-edit.php:153
 msgid "Select a setting for your announcement."
 msgstr ""
 
-#: ../pages/content-add.php:123 ../pages/content-add.php:127
-#: ../pages/content-edit.php:154 ../pages/content-edit.php:158
-#: ../pages/content-show.php:70 ../pages/content-show.php:80
+#: ../pages/content-add.php:124 ../pages/content-add.php:128
+#: ../pages/content-edit.php:155 ../pages/content-edit.php:159
+#: ../pages/content-show.php:71 ../pages/content-show.php:81
 msgid "Start date"
 msgstr ""
 
-#: ../pages/content-add.php:125 ../pages/content-edit.php:156
+#: ../pages/content-add.php:126 ../pages/content-edit.php:157
 msgid "Enter your announcement display start date, Formate YYYY-MM-DD"
 msgstr ""
 
-#: ../pages/content-add.php:129 ../pages/content-edit.php:160
+#: ../pages/content-add.php:130 ../pages/content-edit.php:161
 msgid "Enter your announcement display end date, Formate YYYY-MM-DD"
 msgstr ""
 
-#: ../pages/content-add.php:135
+#: ../pages/content-add.php:136
 msgid "Insert Details"
 msgstr ""
 
-#: ../pages/content-add.php:136 ../pages/content-edit.php:166
-#: ../pages/cycle-setting-edit.php:169
+#: ../pages/content-add.php:137 ../pages/content-edit.php:167
+#: ../pages/cycle-setting-edit.php:170
 msgid "Cancel"
 msgstr ""
 
-#: ../pages/content-add.php:137 ../pages/content-edit.php:167
-#: ../pages/content-show.php:125 ../pages/cycle-setting-edit.php:170
-#: ../pages/cycle-setting-show.php:130
+#: ../pages/content-add.php:138 ../pages/content-edit.php:168
+#: ../pages/content-show.php:126 ../pages/cycle-setting-edit.php:171
+#: ../pages/cycle-setting-show.php:131
 msgid "Help"
 msgstr ""
 
-#: ../pages/content-edit.php:16 ../pages/content-show.php:22
-#: ../pages/cycle-setting-edit.php:16 ../pages/cycle-setting-show.php:22
+#: ../pages/content-edit.php:17 ../pages/content-show.php:23
+#: ../pages/cycle-setting-edit.php:17 ../pages/cycle-setting-show.php:23
 msgid "Oops, selected details doesnt exist"
 msgstr ""
 
-#: ../pages/content-edit.php:98 ../pages/cycle-setting-edit.php:85
+#: ../pages/content-edit.php:99 ../pages/cycle-setting-edit.php:86
 msgid "Details was successfully updated."
 msgstr ""
 
-#: ../pages/content-edit.php:124
+#: ../pages/content-edit.php:125
 msgid "Update details"
 msgstr ""
 
-#: ../pages/content-edit.php:165 ../pages/cycle-setting-edit.php:112
-#: ../pages/cycle-setting-edit.php:168
+#: ../pages/content-edit.php:166 ../pages/cycle-setting-edit.php:113
+#: ../pages/cycle-setting-edit.php:169
 msgid "Update Details"
 msgstr ""
 
-#: ../pages/content-show.php:40 ../pages/cycle-setting-show.php:40
+#: ../pages/content-show.php:41 ../pages/cycle-setting-show.php:41
 msgid "Selected record was successfully deleted ("
 msgstr ""
 
-#: ../pages/content-show.php:53
+#: ../pages/content-show.php:54
 msgid "Announcement management"
 msgstr ""
 
-#: ../pages/content-show.php:54
+#: ../pages/content-show.php:55
 msgid "Add New"
 msgstr ""
 
-#: ../pages/content-show.php:67 ../pages/content-show.php:77
+#: ../pages/content-show.php:68 ../pages/content-show.php:78
 msgid "No"
 msgstr ""
 
-#: ../pages/content-show.php:69 ../pages/content-show.php:79
+#: ../pages/content-show.php:70 ../pages/content-show.php:80
 msgid "Setting"
 msgstr ""
 
-#: ../pages/content-show.php:71 ../pages/content-show.php:81
+#: ../pages/content-show.php:72 ../pages/content-show.php:82
 msgid "End date"
 msgstr ""
 
-#: ../pages/content-show.php:97 ../pages/cycle-setting-show.php:100
+#: ../pages/content-show.php:98 ../pages/cycle-setting-show.php:101
 msgid "Edit"
 msgstr ""
 
-#: ../pages/content-show.php:98
+#: ../pages/content-show.php:99
 msgid "Delete"
 msgstr ""
 
-#: ../pages/content-show.php:111 ../pages/cycle-setting-show.php:117
+#: ../pages/content-show.php:112 ../pages/cycle-setting-show.php:118
 msgid "No records available."
 msgstr ""
 
-#: ../pages/content-show.php:122 ../pages/cycle-setting-show.php:128
+#: ../pages/content-show.php:123 ../pages/cycle-setting-show.php:129
 msgid "Announcement Management"
 msgstr ""
 
-#: ../pages/content-show.php:123 ../pages/cycle-setting-show.php:129
+#: ../pages/content-show.php:124 ../pages/cycle-setting-show.php:130
 msgid "Setting Management"
 msgstr ""
 
-#: ../pages/content-show.php:124
+#: ../pages/content-show.php:125
 msgid "View Shortcode"
 msgstr ""
 
-#: ../pages/content-show.php:129 ../pages/cycle-setting-show.php:134
+#: ../pages/content-show.php:130 ../pages/cycle-setting-show.php:135
 msgid "Plugin configuration option"
 msgstr ""
 
-#: ../pages/content-show.php:131 ../pages/cycle-setting-show.php:136
+#: ../pages/content-show.php:132 ../pages/cycle-setting-show.php:137
 msgid "Add the plugin in the posts or pages using short code."
 msgstr ""
 
-#: ../pages/content-show.php:132 ../pages/cycle-setting-show.php:137
+#: ../pages/content-show.php:133 ../pages/cycle-setting-show.php:138
 msgid "Add directly in to the theme using PHP code."
 msgstr ""
 
-#: ../pages/content-show.php:133 ../pages/cycle-setting-show.php:138
+#: ../pages/content-show.php:134 ../pages/cycle-setting-show.php:139
 msgid "Drag and drop the widget to your sidebar."
 msgstr ""
 
-#: ../pages/cycle-setting-edit.php:59
+#: ../pages/cycle-setting-edit.php:60
 msgid "Please enter the slider timeout, only number."
 msgstr ""
 
-#: ../pages/cycle-setting-edit.php:65
+#: ../pages/cycle-setting-edit.php:66
 msgid "Please enter the slider speed, only number."
 msgstr ""
 
-#: ../pages/cycle-setting-edit.php:114 ../pages/cycle-setting-show.php:67
-#: ../pages/cycle-setting-show.php:79
+#: ../pages/cycle-setting-edit.php:115 ../pages/cycle-setting-show.php:68
+#: ../pages/cycle-setting-show.php:80
 msgid "Setting name"
 msgstr ""
 
-#: ../pages/cycle-setting-edit.php:135
+#: ../pages/cycle-setting-edit.php:136
 msgid "Setting 1 is default for widget."
 msgstr ""
 
-#: ../pages/cycle-setting-edit.php:138
+#: ../pages/cycle-setting-edit.php:139
 msgid "Select a setting name."
 msgstr ""
 
-#: ../pages/cycle-setting-edit.php:145
+#: ../pages/cycle-setting-edit.php:146
 msgid "Select your link setting."
 msgstr ""
 
-#: ../pages/cycle-setting-edit.php:147 ../pages/cycle-setting-show.php:71
-#: ../pages/cycle-setting-show.php:83
+#: ../pages/cycle-setting-edit.php:148 ../pages/cycle-setting-show.php:72
+#: ../pages/cycle-setting-show.php:84
 msgid "Speed"
 msgstr ""
 
-#: ../pages/cycle-setting-edit.php:149
+#: ../pages/cycle-setting-edit.php:150
 msgid "Enter your speed."
 msgstr ""
 
-#: ../pages/cycle-setting-edit.php:151 ../pages/cycle-setting-show.php:72
-#: ../pages/cycle-setting-show.php:84
+#: ../pages/cycle-setting-edit.php:152 ../pages/cycle-setting-show.php:73
+#: ../pages/cycle-setting-show.php:85
 msgid "Timeout"
 msgstr ""
 
-#: ../pages/cycle-setting-edit.php:153
+#: ../pages/cycle-setting-edit.php:154
 msgid "Enter your timeout."
 msgstr ""
 
-#: ../pages/cycle-setting-edit.php:155 ../pages/cycle-setting-show.php:70
-#: ../pages/cycle-setting-show.php:82
+#: ../pages/cycle-setting-edit.php:156 ../pages/cycle-setting-show.php:71
+#: ../pages/cycle-setting-show.php:83
 msgid "Direction"
 msgstr ""
 
-#: ../pages/cycle-setting-edit.php:162
+#: ../pages/cycle-setting-edit.php:163
 msgid "Select cycle direction."
 msgstr ""
 
-#: ../pages/cycle-setting-show.php:53
+#: ../pages/cycle-setting-show.php:54
 msgid "Setting management"
 msgstr ""
 
-#: ../pages/cycle-setting-show.php:68 ../pages/cycle-setting-show.php:80
+#: ../pages/cycle-setting-show.php:69 ../pages/cycle-setting-show.php:81
 msgid "Short code"
 msgstr ""
 
-#: ../pages/cycle-setting-show.php:73 ../pages/cycle-setting-show.php:85
+#: ../pages/cycle-setting-show.php:74 ../pages/cycle-setting-show.php:86
 msgid "Random"
 msgstr ""

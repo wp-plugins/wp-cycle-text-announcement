@@ -3,8 +3,8 @@
 Plugin Name: Wp cycle text announcement
 Plugin URI: http://www.gopiplus.com/work/2012/04/07/wp-cycle-text-announcement-wordpress-plugin/
 Description: Wp cycle text plugin is to show the text news with cycle jQuery. Display one news at a time and cycle the remaining in the mentioned location.
-Author: Gopi.R
-Version: 6.1
+Author: Gopi Ramasamy
+Version: 6.2
 Author URI: http://www.gopiplus.com/work/2012/04/07/wp-cycle-text-announcement-wordpress-plugin/
 Donate link: http://www.gopiplus.com/work/2012/04/07/wp-cycle-text-announcement-wordpress-plugin/
 Tags: Cycle, text, announcement, wordpress, plugin
@@ -12,14 +12,12 @@ License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
+if(preg_match('#' . basename(__FILE__) . '#', $_SERVER['PHP_SELF'])) { die('You are not allowed to call this page directly.'); }
+
 global $wpdb, $wp_version;
 define("WP_WPCYTXT_SETTINGS", $wpdb->prefix . "cycletext_settings");
 define("WP_WPCYTXT_CONTENT", $wpdb->prefix . "cycletext_content");
-
-//define("Wp_wpcytxt_UNIQUE_NAME", "wp-cycle-text-announcement");
-//define("Wp_wpcytxt_TITLE", "Wp cycle text announcement");
 define('Wp_wpcytxt_FAV', 'http://www.gopiplus.com/work/2012/04/07/wp-cycle-text-announcement-wordpress-plugin/');
-//define('Wp_wpcytxt_LINK', 'Check official website for more information <a target="_blank" href="'.Wp_wpcytxt_FAV.'">click here</a>');
 
 if ( ! defined( 'WP_wpcytxt_BASENAME' ) )
 	define( 'WP_wpcytxt_BASENAME', plugin_basename( __FILE__ ) );
