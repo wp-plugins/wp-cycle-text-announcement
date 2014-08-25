@@ -5,8 +5,8 @@ Author URI: http://www.gopiplus.com/work/2012/04/07/wp-cycle-text-announcement-w
 Plugin URI: http://www.gopiplus.com/work/2012/04/07/wp-cycle-text-announcement-wordpress-plugin/
 Tags:  cycle, text, announcement, wordpress, plugin
 Requires at least: 3.4
-Tested up to: 3.9
-Stable tag: 6.2
+Tested up to: 4.0
+Stable tag: 6.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	
@@ -35,11 +35,11 @@ Wp cycle text announcement is a plugin to show the text news with cycle jQuery. 
 
 Drag and drop the widget:
 
-Go to widget page under Appearance menu, Drag and drop Wp cycle text widget into your side bar.
+Go to widget page under Appearance menu, Drag and drop Wp cycle text widget into your sidebar.
 
 Add directly in the theme:
 
-Paste this PHP code <?php wpcytxt('setting1'); ?> in your theme where you want the announcement to appear.
+Paste this PHP code `<?php wpcytxt('setting1'); ?>` in your theme where you want the announcement to appear.
 
 Short code for posts and pages:
 
@@ -49,7 +49,6 @@ Short code : http://www.gopiplus.com/work/2012/04/07/wp-cycle-text-announcement-
 After activated the plugin, go to plugin menu on your wordpress dashboard to manage the news content and to configure the setting,
 
 Dashboard ==> Settings ==> Wp cycle text
-
 
 = Translators =
 
@@ -64,13 +63,13 @@ Dashboard ==> Settings ==> Wp cycle text
 
 [Frequently asked questions](http://www.gopiplus.com/work/2012/04/07/wp-cycle-text-announcement-wordpress-plugin/)
 
-Q) How can I add this plugin under my top-menu/header?
+Q1) How can I add this plugin under my top-menu/header?
 
-Q) How can I add this plugin on my website footer?
+Q2) How can I add this plugin on my website footer?
 
-Q) How can I add this plugin on my sidebar?
+Q3) How can I add this plugin on my sidebar?
 
-Q) How can I change the display style?
+Q4) How can I change the display style?
 
 == Screenshots ==
 
@@ -126,6 +125,10 @@ Plugin *.po file (wp-cycle-text.po) available in the languages folder.
 1. Tested up to 3.9
 2. Restricted direct page access.
 
+= 6.3 =
+
+1. Tested up to 4.0
+
 == Changelog ==
 
 = 1.0 = 
@@ -171,3 +174,7 @@ Plugin *.po file (wp-cycle-text.po) available in the languages folder.
 
 1. Tested up to 3.9
 2. Restricted direct page access.
+
+= 6.3 =
+
+1. Tested up to 4.0
