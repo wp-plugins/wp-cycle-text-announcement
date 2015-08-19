@@ -5,8 +5,8 @@ Author URI: http://www.gopiplus.com/work/2012/04/07/wp-cycle-text-announcement-w
 Plugin URI: http://www.gopiplus.com/work/2012/04/07/wp-cycle-text-announcement-wordpress-plugin/
 Tags:  cycle, text, announcement, wordpress, plugin
 Requires at least: 3.4
-Tested up to: 4.2.2
-Stable tag: 6.5
+Tested up to: 4.3
+Stable tag: 6.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	
@@ -137,6 +137,10 @@ Plugin *.po file (wp-cycle-text.po) available in the languages folder.
 
 1. Tested up to 4.2.2
 
+= 6.6 =
+
+1. Tested up to 4.3
+
 == Changelog ==
 
 = 1.0 = 
@@ -194,3 +198,7 @@ Plugin *.po file (wp-cycle-text.po) available in the languages folder.
 = 6.5 =
 
 1. Tested up to 4.2.2
+
+= 6.6 =
+
+1. Tested up to 4.3

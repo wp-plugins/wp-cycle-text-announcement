@@ -4,6 +4,7 @@
 if (isset($_POST['frm_wpcytxt_display']) && $_POST['frm_wpcytxt_display'] == 'yes')
 {
 	$did = isset($_GET['did']) ? $_GET['did'] : '0';
+	if(!is_numeric($did)) { die('<p>Are you sure you want to do this?</p>'); }
 	
 	$wpcytxt_success = '';
 	$wpcytxt_success_msg = FALSE;
@@ -64,7 +65,6 @@ if (isset($_POST['frm_wpcytxt_display']) && $_POST['frm_wpcytxt_display'] == 'ye
       <table width="100%" class="widefat" id="straymanage">
         <thead>
           <tr>
-            <th class="check-column" scope="col" style="width:15px;"><input type="checkbox" name="wpcytxt_group_item[]" /></th>
 			<th scope="col"><?php _e('No', 'wp-cycle-text'); ?></th>
 			<th scope="col"><?php _e('Announcement', 'wp-cycle-text'); ?></th>
             <th scope="col"><?php _e('Setting', 'wp-cycle-text'); ?></th>
@@ -74,7 +74,6 @@ if (isset($_POST['frm_wpcytxt_display']) && $_POST['frm_wpcytxt_display'] == 'ye
         </thead>
 		<tfoot>
           <tr>
-            <th class="check-column" scope="col" style="height:15px;"><input type="checkbox" name="wpcytxt_group_item[]" /></th>
 			<th scope="col"><?php _e('No', 'wp-cycle-text'); ?></th>
 			<th scope="col"><?php _e('Announcement', 'wp-cycle-text'); ?></th>
             <th scope="col"><?php _e('Setting', 'wp-cycle-text'); ?></th>
@@ -91,7 +90,6 @@ if (isset($_POST['frm_wpcytxt_display']) && $_POST['frm_wpcytxt_display'] == 'ye
 				{
 					?>
 					<tr class="<?php if ($i&1) { echo'alternate'; } else { echo ''; }?>">
-						<td align="left"><input type="checkbox" value="<?php echo $data['wpcytxt_cid']; ?>" name="wpcytxt_group_item[]"></td>
 						<td><?php echo stripslashes($data['wpcytxt_cid']); ?></td>
 						<td><?php echo stripslashes($data['wpcytxt_ctitle']); ?>
 						<div class="row-actions">
@@ -109,7 +107,7 @@ if (isset($_POST['frm_wpcytxt_display']) && $_POST['frm_wpcytxt_display'] == 'ye
 			}
 			else
 			{
-				?><tr><td colspan="6" align="center"><?php _e('No records available.', 'wp-cycle-text'); ?></td></tr><?php 
+				?><tr><td colspan="5" align="center"><?php _e('No records available.', 'wp-cycle-text'); ?></td></tr><?php 
 			}
 			?>
 		</tbody>
